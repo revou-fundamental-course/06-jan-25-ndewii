@@ -6,9 +6,7 @@
         <title>Document</title>
 
         <!--CSS-->
-        <link rel="stylesheet"
-        type="text/CSS"
-        href="C:\Users\nd.ewii\OneDrive\Tài liệu\RevoU Project\06-jan-25-ndewii\CSS\style.CSS">
+        <link rel="stylesheet" href="CSS/style.CSS">
 
     </head>
 
@@ -29,8 +27,6 @@
             </nav>
         </header>
 
-        <hr/>
-
         <!--Main Content-->
         <main>
             <!--Home Page-->
@@ -38,9 +34,11 @@
                 <!--Title-->
                 <header id="home-page">
                     <h1>Hi <span id="user greeting">User</span>, Welcome to Our Website</h1>
-                    <p>Lorem ipsum dolor sit amet adipiscing...</p>
+                    <p>Selamat datang di Kampus Universitas Sulawesi Barat!</p>
+                    <script src="js/script.js"></script>
                 </header>
 
+                <!--Overview-->
                 <div class="banner-image">
 
                 </div>
@@ -49,11 +47,33 @@
             <!--Our Profile-->
             <section>
                 <!--Title-->
-                <header id="our-profie">
+                <header id="our-profile">
                     <h1>Our Profile</h1>
+                    <p>Pimpinan Universitas Sulawesi Barat</p>
                 </header>
 
-                <div class="content"></div>
+                <!--Organization Structure-->
+                <div class="profile-content">
+                        <div class="rektor">
+                            <div id="foto-rektor"></div>
+                            <p>Rektor</p>
+                        </div>
+
+                        <div class="wr-i">
+                            <div id="foto-wr-i"></div>
+                            <p>Wakil Rektor I</p>
+                        </div>
+
+                        <div class="wr-ii">
+                            <div id="foto-wr-ii"></div>
+                            <p>Wakil Rektor II</p>
+                        </div>
+
+                        <div class="wr-iii">
+                            <div id="foto-wr-iii"></div>
+                            <p>Wakil Rektor III</p>
+                        </div>
+                </div>
             </section>
 
             <!--Portofolio-->
@@ -73,15 +93,55 @@
                     <h1>Message Us</h1>
                 </header>
 
-                <div class="content"></div>
+                <!--Input Data-->
+                <div class="input data">
+                    <form>
+                        <label for="name">Nama</label>
+                        <br/>
+                        <label for="birth">Tanggal Lahir</label>
+                        <br/>
+                        <label for="gender">Jenis Kelamin</label>
+                        <br/>
+                        <label for="textarea">Pesan</label>
+                    </form>
+
+                    <form>
+                        <label for="name">:</label>
+                        <br/>
+                        <label for="birth">:</label>
+                        <br/>
+                        <label for="gender">:</label>
+                        <br/>
+                        <label for="textarea">:</label>
+                    </form>
+
+                    <form action="" method="post">
+                        <input id="name" type="text">
+                        <br/>
+                        <input id="birth" type="date">
+                        <br/>
+                        <input type="radio">Laki-laki
+                        <input type="radio">Perempuan
+                        <br/>
+                        <textarea rows="8" cols="40">Ketik di sini</textarea>
+                        <br/>
+                        <input type="submit" value="Submit">
+                    </form>
+
+                    <div id="get-data">
+                        <p>Current Time:</p>
+                        <p><b>Nama</b> :</p>
+                        <p><b>Tanggal Lahir</b> :</p>
+                        <p><b>Jenis Kelamin</b> :</p>
+                        <p><b>Pesan</b> :</p>
+                    </div>
+                </div>
             </section>
         </main>
 
-        <hr/>
-
         <!--Footer-->
         <footer>
-            <p>&copy; 2025 - All rights reserved</p>
+            <p>&copy; 2025 - Created by nd.ewii</p>
         </footer>
     </body>
 </html>
