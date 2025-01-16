@@ -1,5 +1,6 @@
 /* Ini File CSS */
 
+/* Penyesuaian tampilan main-header */
 .main-header{
     padding: 5px 50px 5px 50px;
     border: 1px solid;
@@ -7,8 +8,10 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    align-content: center;
 }
 
+/* Penyesuaian tampilan logo */
 .logo-icon{
     width: 50px;
     height: 50px;
@@ -16,41 +19,62 @@
     background-size: cover;
 }
 
+/* Penyesuaian tampilan navigation */
 nav {
     display: flex;
+    text-align: center;
 }
 
+/* Penyesuaian sisi kiri panel navigation */
 .left-rounded {
     border-radius: 3px 0 0 3px;
 }
 
+/* Penyesuaian sisi kanan panel navigation */
 .right-rounded {
     border-radius: 0 3px 3px 0;
 }
 
+/* Penyesuaian tampilan text dalam panel navigation */
 nav>a {
     border: 1px solid;
     padding: 5px 25px;
     color: black;
     text-decoration: none;
+    align-content: center;
 }
 
+/* Penyesuaian tampilan section */
 section {
     border: 1px solid;
-    padding-left: 110px;
-    padding-top: 20px;
-    padding-right: 110px;
-    padding-bottom: 20px;
+    padding-left: 5%;
+    padding-top: 1%;
+    padding-right: 5%;
+    padding-bottom: 1%
 }
 
+/* Penyesuaian tampilan banner-image dalam overview */
 .banner-image {
-    border: 1px solid;
-    height: 600px;
-    background-image: url(https://karakterunsulbar.com/wp-content/uploads/2021/03/IMG-20210312-WA0024-1024x553.jpg);
+    height: 270px;
+    width: 480px;
     background-size: cover;
     background-position: center;
 }
 
+/* Daftar gambar yang tampil dalam overview */
+.banner-image-1 {
+    background-image: url(https://karakterunsulbar.com/wp-content/uploads/2021/03/IMG-20210312-WA0030-1024x573.jpg);
+}
+
+.banner-image-2 {
+    background-image: url(https://karakterunsulbar.com/wp-content/uploads/2021/03/IMG-20210312-WA0024-1024x553.jpg);
+}
+
+.banner-image-3 {
+    background-image: url(https://karakterunsulbar.com/wp-content/uploads/2021/03/IMG-20210312-WA0028-1024x564.jpg);
+}
+
+/* Penyesuaian tampilan profile-content */
 .profile-content {
     display: flex;
     text-align: center;
@@ -59,6 +83,7 @@ section {
     justify-content: space-around;
 }
 
+/* Penyesuaian tampilan profil rektor */
 .rektor {
     width: 25%;
     text-align: center;
@@ -70,13 +95,14 @@ section {
 #foto-rektor {
     border: 1px solid;
     border-radius: 5px;
-    height: 250px;
-    width: 200px;
+    height: 100px;
+    width: 75px;
     background-image: url(https://unsulbar.ac.id/wp-content/uploads/2014/05/Rektor-1.jpg);
     background-size: 100%;
     background-position: center;
 }
 
+/* Penyesuaian tampilan profil wr i */
 .wr-i {
     width: 25%;
     text-align: center;
@@ -88,13 +114,14 @@ section {
 #foto-wr-i {
     border: 1px solid;
     border-radius: 5px;
-    height: 250px;
-    width: 200px;
+    height: 100px;
+    width: 75px;
     background-image: url(https://unsulbar.ac.id/wp-content/uploads/2014/05/zulfajri-1.jpg);
-    background-size: 115%;
+    background-size: 120%;
     background-position: center;
 }
 
+/* Penyesuaian tampilan profil wr ii */
 .wr-ii {
     width: 25%;
     text-align: center;
@@ -106,13 +133,14 @@ section {
 #foto-wr-ii {
     border: 1px solid;
     border-radius: 5px;
-    height: 250px;
-    width: 200px;
+    height: 100px;
+    width: 75px;
     background-image: url(https://unsulbar.ac.id/wp-content/uploads/2014/03/oslanjumadi.jpg);
-    background-size: 115%;
+    background-size: 120%;
     background-position: center;
 }
 
+/* Penyesuaian tampilan profil wr iii */
 .wr-iii {
     width: 25%;
     text-align: center;
@@ -124,26 +152,30 @@ section {
 #foto-wr-iii {
     border: 1px solid;
     border-radius: 5px;
-    height: 250px;
-    width: 200px;
+    height: 100px;
+    width: 75px;
     background-image: url(https://unsulbar.ac.id/wp-content/uploads/2014/05/Rektor-1.jpg);
     background-size: 100%;
     background-position: center;
 }
 
+/* Penyesuaian tampilan content */
 .content {
     /* Opsional */
     height: 500px;
 }
 
+/* Penyesuaian tampilan input data pada message us */
 .user-data {
     display: flex;
 }
 
+/* Penyesuaian tampilan form pada message us */
 form {
-    width: 50%;
+    width: 100%;
 }
 
+/* Penyesuaian tampilan result form pada message us */
 #output-data {
     border: 1px solid;
     padding-left: 5px;
@@ -152,6 +184,65 @@ form {
     width: 50%;
 }
 
+/* Penyesuaian tampilan footer */
 footer {
     text-align: center;
+}
+
+/* CSS yang dijalankan di ukuran layar kurang dari 600px */
+@media only screen and (max-width: 600px) {
+    /* Penyesuaian tampilan main-header pada ukuran layar kurang dari 600px */
+    .main-header {
+        flex-direction: column;
+    }
+    
+    /* Pemberian jarak antara logo dan panel navigation pada ukuran layar kurang dari 600px */
+    .logo-icon {
+        margin: 10px;
+    }
+
+    /* Penyesuaian tampilan navigation pada ukuran layar kurang dari 600px */
+    nav>a {
+        border: 1px solid;
+        padding: 1px 5px;
+        color: black;
+        text-decoration: none;
+        align-content: center;
+    }
+
+    /* Penyesuaian ukuran banner-image overview pada ukuran layar kurang dari 600px */
+    .banner-image {
+        height: 100px;
+        width: 150px;
+    }
+
+    /* Penyesuaian tampilan profile-content pada ukuran layar kurang dari 600px */
+    .profile-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Penyesuaian tampilan input data pada ukuran layar kurang dari 600px */
+    .user-data {
+        flex-direction: column;
+    }
+
+    /* Penyesuaian ukuran form input data pada ukuran layar kurang dari 600px */
+    form {
+        width: 50%;
+    }
+
+    /* Penyesuaian ukuran textarea pada ukuran layar kurang dari 600px */
+    textarea {
+        width: 200px;
+    }
+    
+    /* Penyesuaian tampilan result form pada ukuran layar kurang dari 600px */
+    #output-data {
+        border: 1px solid;
+        padding-left: 5px;
+        padding-right: 5px;
+        height: 200px;
+        width: 100%;
+    }
 }

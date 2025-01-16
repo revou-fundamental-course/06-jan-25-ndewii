@@ -7,9 +7,6 @@
 
         <!--CSS-->
         <link rel="stylesheet" href="CSS/style.CSS">
-
-        <script src="js/script.js"></script>
-
     </head>
 
     <body>
@@ -40,9 +37,12 @@
                 </header>
 
                 <!--Overview-->
-                <div class="banner-image">
+                <div class="banner-image banner-image-1"></div>
+                <div class="banner-image banner-image-2"></div>
+                <div class="banner-image banner-image-3"></div>
 
-                </div>
+                <br/>
+                
             </section>
 
             <!--Our Profile-->
@@ -55,25 +55,29 @@
 
                 <!--Organization Structure-->
                 <div class="profile-content">
-                        <div class="rektor">
-                            <div id="foto-rektor"></div>
-                            <p>Rektor</p>
-                        </div>
+                    <!--Rektor-->
+                    <div class="rektor">
+                        <div id="foto-rektor"></div>
+                        <p>Rektor</p>
+                    </div>
 
-                        <div class="wr-i">
-                            <div id="foto-wr-i"></div>
-                            <p>Wakil Rektor I</p>
-                        </div>
+                    <!--WR I-->
+                    <div class="wr-i">
+                        <div id="foto-wr-i"></div>
+                        <p>Wakil Rektor I</p>
+                    </div>
 
-                        <div class="wr-ii">
-                            <div id="foto-wr-ii"></div>
-                            <p>Wakil Rektor II</p>
-                        </div>
+                    <!--WR I-->
+                    <div class="wr-ii">
+                        <div id="foto-wr-ii"></div>
+                        <p>Wakil Rektor II</p>
+                    </div>
 
-                        <div class="wr-iii">
-                            <div id="foto-wr-iii"></div>
-                            <p>Wakil Rektor III</p>
-                        </div>
+                    <!--WR I-->
+                    <div class="wr-iii">
+                        <div id="foto-wr-iii"></div>
+                        <p>Wakil Rektor III</p>
+                    </div>
                 </div>
             </section>
 
@@ -85,31 +89,7 @@
                 </header>
 
                 <div class="content">
-                    <form name="message-form" onsubmit="return validationForm()">
-                    Nama:
-                    <input placeholder="Nama" type="text" name="full-name"/>
-                    <br/>
-                    Tanggal Lahir:
-                    <input type="date" name="birth-date"/>
-                    <br/>
-                    Jenis Kelamin:
-                    <input type="radio" id="male" name="gender" value="male"/>
-                    <label for="male">Laki-laki</label>
-                    <input type="radio" id="female" name="gender" value="female"/>
-                    <label for="female">Perempuan</label>
-                    <br/>
-                    Pesan:
-                    <textarea placeholder="Pesan" name="message"></textarea>
-                    <br/>
-                    <input type="submit" value="submit"/>
-                    </form>
-                </div>
-                
-                <div>
-                    <p>Nama:<span id="sender-full-name"></span></p>
-                    <p>Tanggal Lahir:<span id="sender-birth-date"></span></p>
-                    <p>Jenis Kelamin:<span id="sender-gender"></span></p>
-                    <p>Pesan:<span id="sender-messages"></span></p></p>
+                    
                 </div>
             </section>
 
@@ -122,8 +102,10 @@
 
                 <!--User Data-->
                 <div class="user-data">
+                    <!--Form input user-->
                     <form action="proses" method="post" id="user-data">
                         <table border="0">
+                            <!--Form input untuk Nama-->
                             <tr>
                                 <td>Nama</td>
                                 <td>:</td>
@@ -132,6 +114,7 @@
                                 </td>
                             </tr>
 
+                            <!--Form input untuk Tanggal Lahir-->
                             <tr>
                                 <td>Tanggal Lahir</td>
                                 <td>:</td>
@@ -140,15 +123,17 @@
                                 </td>
                             </tr>
 
+                            <!--Form input untuk Jenis Kelamin-->
                             <tr>
                                 <td>Jenis Kelamin</td>
                                 <td>:</td>
                                 <td>
-                                    <input type="radio">Laki-laki
-                                    <input type="radio">Perempuan
+                                    <input type="radio" id="laki-laki" name="gender" value="Laki-laki">Laki-laki
+                                    <input type="radio" id="perempuan" name="gender" value="Perempuan">Perempuan
                                 </td>
                             </tr>
 
+                            <!--Form input untuk Pesan-->
                             <tr>
                                 <td style="align-content: baseline;">Pesan</td>
                                 <td style="align-content: baseline;">:</td>
@@ -157,23 +142,25 @@
                                 </td>
                             </tr>
 
+                            <!--Form/button untuk Submit-->
                             <tr>
                                 <td colspan="3">
-                                    <input type="submit" value="Submit" style="width: -webkit-fill-available;">
+                                    <button type="button" id="submit" style="width: -webkit-fill-available;">Submit</button>
                                 </td>
                             </tr>
                         </table>
-                    </form>
-                    
-                    <form action="" method=""
 
+                        <br/>
+                    </form>
+
+                    <!--Form result user-->
                     <div id="output-data">
                         <p><b>Current Time</b>:<span id="input-time"></span></p>
                         <br/>
-                        <p><b>Nama</b> :<span id="name"></span></p>
-                        <p><b>Tanggal Lahir</b> :<span id="birth"></span></p>
-                        <p><b>Jenis Kelamin</b> :<span id="gender"></span></p>
-                        <p><b>Pesan</b> :<span id="message"></span></p>
+                        <p><b>Nama</b> :<span id="name-input"></span></p>
+                        <p><b>Tanggal Lahir</b> :<span id="birth-input"></span></p>
+                        <p><b>Jenis Kelamin</b> :<span id="gender-input"></span>
+                        <p><b>Pesan</b> :<span id="messages-input"></span></p>
                     </div>
                 </div>
             </section>
@@ -183,5 +170,7 @@
         <footer>
             <p>&copy; 2025 - Created by nd.ewii</p>
         </footer>
+
+        <script src="js/script.js"></script>
     </body>
 </html>
